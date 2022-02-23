@@ -1,6 +1,6 @@
 <?php
 
-$dbconn = pg_connect("host=localhost dbname=dbaccount user=postgres password=12345");
+$dbconn = pg_connect("host=localhost dbname=dbaccount user=postgres password=2345");
 
  // Performing SQL query
 $query1 = 'SELECT username FROM account';
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
   if ($uname = $result1 && $passwd = $result2){
     header('Location: index.php');
   }
-  else header('Location: index.php');
+  else header('Location: login.php');
 
 }
 
