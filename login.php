@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
   if ($uname = $result1 && $passwd = $result2){
     header('Location: index.php');
   }
-  else header('Location: login.php');
+  else header('Location: index.php');
 
 }
 
